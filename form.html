@@ -10,34 +10,42 @@
   margin: 0;
   overflow: hidden;
 }
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url(img/bg-1.png);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
 
 iframe {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-div{
-  background-color: rgb(46, 119, 214);
-  justify-content: center;
-  text-align: center;
-  height: 100px;
-}
 
-h1{
-  margin: 0;
-  padding-top: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 150px;
-}
     </style>
 </head>
 <body>
-  <div>
-	<h1 style="color:white;">JIIT OSA Chapter</h1>
-  </div>
+  <div class="hero">
 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOMkWttX7rLqi-klvqFjH_FBH3JEO0osQRKOKgx1vKnQgc7w/viewform?embedded=true" width="550" height="600" frameborder="0" marginheight="0" marginwidth="0">
 		Loading…
 	</iframe>
+</div>
 </body>
 
 </html>
